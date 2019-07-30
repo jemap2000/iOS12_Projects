@@ -55,13 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				391FF07622E9103B00798950 /* AppDelegate.swift */,
-				391FF07822E9103B00798950 /* ViewController.swift */,
-				391FF07A22E9103B00798950 /* Main.storyboard */,
+				39F0CAF422E92141000BB8BD /* Controller */,
+				39F0CAF522E9215E000BB8BD /* Storyboard */,
 				391FF07D22E9103D00798950 /* Assets.xcassets */,
-				391FF07F22E9103D00798950 /* LaunchScreen.storyboard */,
 				391FF08222E9103D00798950 /* Info.plist */,
 			);
 			path = "01-iamrich";
+			sourceTree = "<group>";
+		};
+		39F0CAF422E92141000BB8BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				391FF07822E9103B00798950 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39F0CAF522E9215E000BB8BD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				391FF07A22E9103B00798950 /* Main.storyboard */,
+				391FF07F22E9103D00798950 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +305,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.filmartedigital.-1-iamrich";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filmartedigital.iamrich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.filmartedigital.-1-iamrich";
+				PRODUCT_BUNDLE_IDENTIFIER = com.filmartedigital.iamrich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby-image" translatesAutoresizingMaskIntoConstraints="NO" id="S0v-cl-mOL">
+                                <rect key="frame" x="106.5" y="363" width="201" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tv-9Y-akb">
+                                <rect key="frame" x="130.5" y="275" width="153.5" height="48"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="0.83428865671157837" green="0.12333741039037704" blue="0.12772896885871887" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.55588722876924324" green="0.95981757539122547" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.10000000000000001" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4H-Hj-gh4">
+                                <rect key="frame" x="104.5" y="573" width="205" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Púlsame y serás Rico">
+                                    <color key="titleColor" red="0.83428865669999996" green="0.1233374104" blue="0.12772896889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eym-9I-pos"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29844973988431139" green="0.049412520115457298" blue="0.52080634715025909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tv-9Y-akb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5sw-Gx-m5B"/>
+                            <constraint firstItem="S0v-cl-mOL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AKs-SD-pqI"/>
+                            <constraint firstItem="h4H-Hj-gh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BqJ-rR-i89"/>
+                            <constraint firstItem="S0v-cl-mOL" firstAttribute="top" secondItem="6Tv-9Y-akb" secondAttribute="bottom" constant="40" id="FXV-dp-i4g"/>
+                            <constraint firstItem="h4H-Hj-gh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KeD-az-IOr"/>
+                            <constraint firstItem="h4H-Hj-gh4" firstAttribute="top" secondItem="S0v-cl-mOL" secondAttribute="bottom" constant="40" id="Umh-oz-zCe"/>
+                            <constraint firstItem="S0v-cl-mOL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fo8-PS-TDZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="h4H-Hj-gh4" id="fbg-x3-tbf"/>
+                        <outlet property="imageViewDiamond" destination="S0v-cl-mOL" id="7TZ-b9-7yC"/>
+                        <outlet property="labelTitle" destination="6Tv-9Y-akb" id="vFa-8b-TfC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby-image" width="201" height="170"/>
+    </resources>
+</document>
